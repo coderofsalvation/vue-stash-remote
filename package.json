@@ -1,0 +1,30 @@
+{
+  "name": "vue-stash-remote",
+  "version": "1.0.0",
+  "description": "description here",
+  "main": "index.js",
+  "directories": {
+    "test": "set -ex; for test in test/tests/*; do $test; done"
+  },
+  "scripts": {
+    "test": "set -ex; for test in test/tests/*; do $test; done"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderofsalvation/vue-stash-remote.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderofsalvation/vue-stash-remote/issues"
+  },
+  "homepage": "https://github.com/coderofsalvation/vue-stash-remote#readme",
+  "dependencies": {
+    "axios": "^0.16.1",
+    "json-schema-defaults": "^0.3.0",
+    "lodash": "^4.17.4",
+    "parse": "^1.10.0",
+    "tv4-node": "0.0.0"
+  }
+}
