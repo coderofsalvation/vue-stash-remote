@@ -1,5 +1,5 @@
-schema-based vue-stash for restful api's & Parse server to easify development
 
+schema-based vue-stash for restful api's & Parse server to easify development
 ![Build Status](https://travis-ci.org/--repourl=git@github.com:coderofsalvation/vue-stash-remote..svg?branch=master)
 
 ## Usage
@@ -82,12 +82,15 @@ Lets assume this component:
 </script>
 ```
 
-Now you can use these functions
+## Now you can use these functions
+
+> NOTE: the user.all-cache is only used/updated when `cache:true` is set in the configuration
 
 | function | returntype | notes |
 |-|-|-|
 | this.user.get(username,true) | a promise | automatically overwrites 'user.current' with response |
-| this.user.save(user)         | a promise | rejects with schema-errors if object does not match schema. Automatically creates schema in Parse-backend. |
+| this.user.save(user)         | a promise | rejects with schema-errors if object does not match schema. |
+|                              |           |  Automatically creates schema in Parse-backend. |
 | this.monkey.Class | a parse Class | see CRUD methods at https://www.npmjs.com/package/parse |
 | this.$root.Parse | Parse object | see https://www.npmjs.com/package/axios | 
 | this.$root.axios.request(config) | a promise | see https://www.npmjs.com/package/axios |
@@ -99,12 +102,8 @@ Now you can use these functions
 | this.$root.axios.put(url[, data[, config]])| a promise | see https://www.npmjs.com/package/axios |
 | this.$root.axios.patch(url[, data[, config]])| a promise | see https://www.npmjs.com/package/axios |
 
-> NOTE: the user.all-cache is only used/updated when `cache:true` is set in the configuration
-
 ## Features
 
 * easily add RESTful or Parse resources to your vue2 app
 * automatically validates with jsonschema during .save() (handy for form-validation)
-
-## Example: foo
 
