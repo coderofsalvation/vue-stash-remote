@@ -80,11 +80,24 @@ Lets assume this component:
 		},
 	}
 </script>
+```
+
+Now you can use these functions
 
 | function | returntype | notes |
 |-|-|-|
 | this.user.get(username,true) | a promise | automatically overwrites 'user.current' with response |
 | this.user.save(user)         | a promise | rejects with schema-errors if object does not match schema. Automatically creates schema in Parse-backend. |
+| this.monkey.Class | a parse Class | see CRUD methods at https://www.npmjs.com/package/parse |
+| this.$root.Parse | Parse object | see https://www.npmjs.com/package/axios | 
+| this.$root.axios.request(config) | a promise | see https://www.npmjs.com/package/axios |
+| this.$root.axios.get(url[, config]) | a promise | see https://www.npmjs.com/package/axios |
+| this.$root.axios.delete(url[, config])| a promise | see https://www.npmjs.com/package/axios |
+| this.$root.axios.head(url[, config])| a promise | see https://www.npmjs.com/package/axios |
+| this.$root.axios.options(url[, config])| a promise | see https://www.npmjs.com/package/axios |
+| this.$root.axios.post(url[, data[, config]])| a promise | see https://www.npmjs.com/package/axios |
+| this.$root.axios.put(url[, data[, config]])| a promise | see https://www.npmjs.com/package/axios |
+| this.$root.axios.patch(url[, data[, config]])| a promise | see https://www.npmjs.com/package/axios |
 
 > NOTE: the user.all-cache is only used/updated when `cache:true` is set in the configuration
 
