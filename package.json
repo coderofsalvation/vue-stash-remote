@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/coderofsalvation/vue-stash-remote#readme",
   "dependencies": {
-    "axios": "^0.16.1",
+    "axios": "^0.19.2",
     "json-schema-defaults": "^0.3.0",
     "lodash": "^4.17.4",
     "parse": "^1.10.0",
